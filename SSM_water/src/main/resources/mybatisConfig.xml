@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE configuration
+                PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <plugins>
+
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <property name="reasonable " value="true"/>
+        </plugin>
+    </plugins>
+
+    <mappers>
+        <!--这是映射文件
+        <mapper resource="com/dao/UserMapper.xml"/>-->
+        <package name="com.ssm.dao"/>
+        <!-- 这个是一个包  <package name="com.ssm.dao"/>-->
+    </mappers>
+</configuration>
+
